@@ -1,0 +1,27 @@
+#!/usr/bin/env python
+# encoding: utf-8
+# a1batross, 2019
+
+def options(opt):
+	opt.load('android')
+	return
+
+def configure(conf):
+	conf.load('android')
+	conf.env.D8_DEBUG = conf.options.BUILD_TYPE != 'release'
+	return
+
+def build(bld):
+	tsk = bld(
+		features = 'android javac',
+		srcdir = 'src',
+		compat = bld.env.JAVAC_SOURCE_TARGET,
+		name = 'mod',
+		jni = 'lib',
+		keystore = bld.path.parent.find_node( bld.env.JKEYSTORE ),
+		debug = bld.env.D8_DEBUG,
+		target_api = 29
+	)
+
+	tsk.env.append_unique( "JAVACFLAGS", [ "-target", bld.env.JAVAC_SOURCE_TARGET ] )
+	return

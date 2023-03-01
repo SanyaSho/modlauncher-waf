@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="srceng_launcher_command_args">Command-line arguments</string>
+
+    <string name="srceng_launcher_about_title">About</string>
+    <string name="srceng_launcher_about_text">Thanks to nillerusr and jusic for port\nvalve for source engine\n\nNot for commercial use!\nContact Us: unknownandlost11@gmail.com\n\nDonate: https://new.donatepay.ru/@nillerusr\nBTC(Bitcoin): bc1qnjq92jj9uqjtafcx2zvnwd48q89hgtd6w8a6na\nXMR(Monero): 48iXvX61MU24m5VGc77rXQYKmoww3dZh6hn7mEwDaLVTfGhyBKq2teoPpeBq6xvqj4itsGh6EzNTzBty6ZDDevApCFNpsJg</string>
+
+    <string name="srceng_launcher_launch">Launch</string>
+    <string name="srceng_launcher_ok">OK</string>
+    <string name="srceng_launcher_error">Error</string>
+
+    <string name="new_update">Update avalible!</string>
+    <string name="source_engine_fatal">Please install Source Engine!</string>
+</resources>
