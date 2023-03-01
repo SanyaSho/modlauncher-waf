@@ -4,7 +4,6 @@ build/
 .lock*
 *.pfx
 *.so
-*.sh
 *.vpk
 /bin/
 .classpath
