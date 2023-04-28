@@ -1,6 +1,8 @@
 #!/bin/bash
 
-rm android/assets/extras_dir.vpk
+if [ -e "android/assets/extras_dir.vpk" ]; then
+	rm android/assets/extras_dir.vpk
+fi
 
 vpk -c vpk/ android/assets/extras_dir.vpk
 

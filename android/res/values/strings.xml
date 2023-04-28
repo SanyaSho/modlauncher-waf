@@ -9,6 +9,6 @@
     <string name="srceng_launcher_ok">OK</string>
     <string name="srceng_launcher_error">Error</string>
 
-    <string name="new_update">Update avalible!</string>
+    <string name="new_update">Update available!</string>
     <string name="source_engine_fatal">Please install Source Engine!</string>
 </resources>
