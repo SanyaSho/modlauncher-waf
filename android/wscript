@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 # a1batross, 2019
+import buildcopy
 
 def options(opt):
 	opt.load('android')
@@ -13,7 +14,8 @@ def configure(conf):
 
 def build(bld):
 	tsk = bld(
-		features = 'android javac',
+		features = 'android javac buildcopy',
+		buildcopy_source = bld.path.ant_glob( "lib/" ),
 		srcdir = 'src',
 		compat = bld.env.JAVAC_SOURCE_TARGET,
 		name = 'mod',

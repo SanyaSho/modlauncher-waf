@@ -5,7 +5,6 @@
 import os
 from waflib import *
 from waflib.Tools import javaw
-import shutil
 
 android_sdk_home_env = ['ANDROID_SDK_HOME', 'ANDROID_SDK']
 
@@ -222,15 +221,6 @@ class apkjni(Task.Task):
 		for t in self.run_after:
 			if not t.hasrun:
 				return Task.ASK_LATER
-
-		# PIECE OF SHIT
-		# but works
-		if os.path.exists( os.getcwd() + "/build/android/lib" ):
-			#print( "deleting" )
-			shutil.rmtree( os.getcwd() + "/build/android/lib" )
-
-		#print( "copying" )
-		shutil.copytree( os.getcwd() + "/android/lib", os.getcwd() + "/build/android/lib" )
 
 		# I could use SRC here, but I need to track changes of OUTAPK_UNALIGNED_NOCLASSES_NOJNI also
 		self.inputs += self.generator.outdir.ant_glob('{0}/**/*'.format(self.env.JNIDIR), quiet=True)
