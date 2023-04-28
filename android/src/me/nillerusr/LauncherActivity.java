@@ -138,7 +138,7 @@ public class LauncherActivity extends Activity
 			}
 		} );
 
-		cmdArgs.setText( mPref.getString( "argv", "-console" ) );
+		cmdArgs.setText( mPref.getString( "argv", "-nobackgroundlevel" ) );
 
 		boolean isCommitEmpty = getResources().getString( R.string.current_commit ).isEmpty();
 		boolean isURLEmpty = getResources().getString( R.string.update_url ).isEmpty();
