@@ -12,25 +12,25 @@
     <uses-feature android:glEsVersion="0x00020000"/>
     <uses-sdk android:minSdkVersion="18" android:targetSdkVersion="24" />
     <application android:icon="@drawable/mod_icon" android:debuggable="true" android:label="@string/mod_name" android:allowAudioPlaybackCapture="true" android:requestLegacyExternalStorage="true">
-        <activity android:label="@string/mod_name" android:name="me.nillerusr.LauncherActivity" android:windowSoftInputMode="adjustResize|stateHidden">
+        <activity android:label="@string/mod_name" android:name="me.nillerusr.LauncherActivity" android:windowSoftInputMode="adjustResize|stateHidden" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:label="Directory" android:name="me.nillerusr.DirchActivity" android:windowSoftInputMode="adjustResize|stateHidden">
+        <activity android:label="Directory" android:name="me.nillerusr.DirchActivity" android:windowSoftInputMode="adjustResize|stateHidden" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.DIRCH"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-          <activity android:configChanges="layoutDirection|locale|orientation|uiMode|screenLayout|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation" android:label="@string/mod_name" android:name="org.libsdl.app.SDLActivity" android:screenOrientation="sensorLandscape" android:launchMode="singleTask" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+          <activity android:configChanges="layoutDirection|locale|orientation|uiMode|screenLayout|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation" android:label="@string/mod_name" android:name="org.libsdl.app.SDLActivity" android:screenOrientation="sensorLandscape" android:launchMode="singleTask" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:exported="true">
             <intent-filter>
                 <action android:name="org.libsdl.app.SDLACTIVITY"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <service android:name="me.nillerusr.UpdateService" android:stopWithTask="false" />
+        <service android:name="me.nillerusr.UpdateService" android:stopWithTask="false" android:exported="true" />
         <meta-data android:name="android.max_aspect" android:value="9999.0" />
         <meta-data android:name="android.allow_multiple_resumed_activities" android:value="true" />
     </application>
