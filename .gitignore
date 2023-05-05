@@ -9,3 +9,4 @@ build/
 .classpath
 .project
 *.pyc
+android-sdk/
