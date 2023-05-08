@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="srceng_launcher_command_args">Arguments de la ligne de commande</string>
+
+    <string name="srceng_launcher_about_title">À propos</string>
+    <string name="srceng_launcher_about_text">Merci à Nillerusr et Jusic pour le portage\nValve pour Source (moteur de jeu)\n\nPas d\'utilisation commerciale !\nContactez-nous : unknownandlost11@gmail.com\n\nFaire un don : https://boosty.to/nillerusr\nETH(Ethereum) : 0x5d0D561146Ed758D266E59B56e85Af0b03ABAF46\nBTC(Bitcoin) : bc1qnjq92jj9uqjtafcx2zvnwd48q89hgtd6w8a6na\nXMR(Monero) : 48iXvX61MU24m5VGc77rXQYKmoww3dZh6hn7mEwDaLVTfGhyBKq2teoPpeBq6xvqj4itsGh6EzNTzBty6ZDDevApCFNpsJg</string>
+
+    <string name="srceng_launcher_launch">Lancer</string>
+    <string name="srceng_launcher_ok">OK</string>
+    <string name="srceng_launcher_error">Erreur</string>
+
+    <string name="new_update">Mise à jour disponible !</string>
+    <string name="source_engine_fatal">Veuillez installer Source Engine !</string>
+</resources>
